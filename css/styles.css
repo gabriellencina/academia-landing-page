@@ -42,13 +42,6 @@ p.about-academy {
     max-width: 500px;
 }
 
-p.about-location,
-i.bi bi-geo-alt-fill {
-    font-size: 1.6em;
-    color: var(--secondary);
-    font-weight: bold;
-}
-
 .form-custom {
     font-size: 1.2em;
 }
@@ -106,14 +99,20 @@ section#academy-benefits h2 {
     background-color: var(--primary);
     text-align: center;
     padding: 2em;
+    color: var(--secondary);
+    font-size: 2em;
 }
 
 .benefits {
+    height: 85vh;
     display: flex;
     justify-content: space-around;
     padding: 4em;
     width: 80%;
     margin: 0 auto;
+    align-items: center;
+    background-color: var(--text-tertiary);
+    width: 100%;
 }
 
 .benefit {
@@ -122,16 +121,16 @@ section#academy-benefits h2 {
     flex-direction: column;
     align-items: center;
     max-width: 20%;
-    color: var(--text-tertiary);
+    color: var(--secondary);
 }
 
 .benefit .benefit-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 500px;
+    height: 300px;
+    border-radius: 5%;
     background-size: cover;
     background-position: center;
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
 }
 
 #benefit-1 {
@@ -139,9 +138,52 @@ section#academy-benefits h2 {
 }
 
 #benefit-2 {
-    background-image: url("../img/corda.jpg");
+    background-image: url("../img/flexao.jpg");
 }
 
 #benefit-3 {
-    background-image: url("../img/concentrado.jpg");
+    background-image: url("../img/remada.jpg");
 }
+
+/* Academy-location */
+#academy-location {
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url("../img/fisio.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-primary);
+    margin-bottom: 5em;
+}
+
+#address,
+#about-location {
+    max-width: 100%;
+}
+
+#address {
+    display: flex;
+    max-width: 100%;
+}
+
+#address i {
+    color: var(--secondary);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--secondary);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+/* Academy details container */
