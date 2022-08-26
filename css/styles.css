@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-bottom: 500px;
-}
-
 /* Academy subscription form */
 #academy-description {
     background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
@@ -187,3 +183,217 @@ section#academy-benefits h2 {
 }
 
 /* Academy details container */
+#academy-abouts {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.academy-detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.academy-detail img {
+    width: 50%;
+}
+
+.academy-detail h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#detail-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.detail-description {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: 0.4em;
+}
+
+/* Academy-last-call */
+#academy-last-call {
+    height: 800px;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+    url("../img/concentrado.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+#academy-last-call h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+#academy-last-call .btn {
+    width: 25%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+/* Academy footer */
+#academy-footer {
+    text-align: center;
+    color: var(--text-primary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary);
+    font-size: 1.1em;
+}
+
+#academy-footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+    color: var(--secondary);
+}
+
+#academy-footer p:nth-child(2){
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#academy-footer span {
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    .btn {
+        opacity: 1;
+    }
+    
+    /* Academy subscription form */
+    #academy-description{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #information-main {
+        padding: 2em;
+    }
+
+    div#information-main h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+    
+    /* Academy benefits section */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .benefit .benefit-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    /* Academy-location */
+    #academy-location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* Academy details container */
+    .academy-detail {
+        flex-direction: column;
+        margin-bottom: .5em;
+        gap: 0;
+    }
+
+    .academy-detail img {
+        width: 100%;
+        margin: 2em 0;
+        border-radius: 5%;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Academy-last-call */
+    #academy-last-call {
+        height: 500px;
+    }
+
+    #academy-last-call .btn {
+       width: 80%; 
+    }
+
+    #academy-last-call h3 {
+        text-align: center;
+        padding: .5em;
+    }
+}
