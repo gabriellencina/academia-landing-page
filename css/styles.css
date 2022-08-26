@@ -12,6 +12,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Navbar */
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    height: 8vh;
+    font-size: 1.3em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
 
 /* Academy subscription form */
 #academy-description {
@@ -198,6 +231,7 @@ section#academy-benefits h2 {
 
 .academy-detail img {
     width: 50%;
+    border-radius: 5%;
 }
 
 .academy-detail h3 {
@@ -280,6 +314,53 @@ section#academy-benefits h2 {
 }
 
 /* Mobile */
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--secondary);
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background-color: var(--primary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+    }
+
+
+}
+
 @media (max-width: 450px) {
     .btn {
         opacity: 1;
