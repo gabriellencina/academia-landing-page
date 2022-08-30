@@ -33,7 +33,7 @@ nav {
     width: 100%;
 }
 
-.logonavbar{
+.logonavbar {
     height: 6em;
 }
 
@@ -157,27 +157,28 @@ section#academy-benefits h2 {
     align-items: center;
     max-width: 20%;
     color: var(--secondary);
+    font-size: 1.8em;
 }
 
 .benefit .benefit-img {
     width: 350px;
     height: 350px;
-    border-radius: 100%;
+    border-radius: 1%;
     background-size: cover;
     background-position: center;
     margin-bottom: 1.2em;
 }
 
 #benefit-1 {
-    background-image: url("../img/academia.jpg");
+    background-image: url("../img/bike.svg");
 }
 
 #benefit-2 {
-    background-image: url("../img/flexao.jpg");
+    background-image: url("../img/personal_trainer.svg");
 }
 
 #benefit-3 {
-    background-image: url("../img/remada.jpg");
+    background-image: url("../img/fit.svg");
 }
 
 /* Academy-location */
