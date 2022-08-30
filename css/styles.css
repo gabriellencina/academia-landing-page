@@ -31,6 +31,7 @@ nav {
     font-size: 1.3em;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .logonavbar {
@@ -75,7 +76,9 @@ p.about-academy {
     font-size: 2em;
     margin-bottom: 2em;
     max-width: 500px;
+    visibility: hidden;
 }
+
 
 .form-custom {
     font-size: 1.2em;
@@ -86,6 +89,7 @@ p.about-academy {
     padding: 2em;
     max-width: 22%;
     font-size: 1.3em;
+    visibility: hidden;
 }
 
 #subscription-form p {
@@ -158,6 +162,7 @@ section#academy-benefits h2 {
     max-width: 20%;
     color: var(--secondary);
     font-size: 1.8em;
+    visibility: hidden;
 }
 
 .benefit .benefit-img {
@@ -204,6 +209,7 @@ section#academy-benefits h2 {
     display: flex;
     max-width: 100%;
     font-size: 2em;
+    visibility: hidden;
 }
 
 #address i {
@@ -239,6 +245,7 @@ section#academy-benefits h2 {
     justify-content: space-between;
     gap: 5%;
     margin-bottom: 4em;
+    visibility: hidden;
 }
 
 .academy-detail img {
@@ -281,6 +288,7 @@ section#academy-benefits h2 {
 .localimg {
     border-radius: 5%;
     width: 20%;
+    visibility: hidden;
 }
 
 /* Academy-last-call */
@@ -414,7 +422,7 @@ section#academy-benefits h2 {
     }
 
     .logotipo {
-        width: 100%;  
+        width: 100%;
     }
     
     /* Academy subscription form */
