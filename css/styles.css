@@ -203,6 +203,7 @@ section#academy-benefits h2 {
 #address {
     display: flex;
     max-width: 100%;
+    font-size: 2em;
 }
 
 #address i {
@@ -226,6 +227,10 @@ section#academy-benefits h2 {
 #academy-abouts {
     width: 80%;
     margin: 0 auto;
+    background-color: var(--text-secondary);
+    margin-bottom: 5em;
+    padding: 5em;
+    border-radius: 2%;
 }
 
 .academy-detail {
@@ -243,8 +248,9 @@ section#academy-benefits h2 {
 
 .academy-detail h3 {
     margin-bottom: 1em;
-    font-size: 2em;
-    font-weight: 500;
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--secondary);
 }
 
 #detail-1 h3 {
@@ -257,12 +263,24 @@ section#academy-benefits h2 {
     padding-left: 2em;
 }
 
+.detail-description p {
+    font-size: 27px;
+    color: var(--text-primary);
+}
+
 .detail-description ul {
     list-style-position: inside;
+    font-size: 27px;
+    color: var(--text-primary);
 }
 
 .detail-description ul li {
     margin-bottom: 0.4em;
+}
+
+.localimg {
+    border-radius: 5%;
+    width: 20%;
 }
 
 /* Academy-last-call */
@@ -394,6 +412,10 @@ section#academy-benefits h2 {
     .btn {
         opacity: 1;
     }
+
+    .logotipo {
+        width: 100%;  
+    }
     
     /* Academy subscription form */
     #academy-description{
@@ -410,7 +432,7 @@ section#academy-benefits h2 {
     }
 
     #subscription-form {
-        max-width: 80%;
+        max-width: 70%;
         margin-bottom: 2em;
     }
     
@@ -418,12 +440,13 @@ section#academy-benefits h2 {
     .benefits {
         flex-direction: column;
         align-items: center;
-        width: auto;
+        width: 100%;
         padding: 2em;
+        font-size: 6px;
     }
 
     .benefit {
-        max-width: 100%;
+        max-width: 60%;
         margin-bottom: 2em;
     }
 
@@ -441,6 +464,10 @@ section#academy-benefits h2 {
         padding: 2em 0;
     }
 
+    .localimg {
+        display: none;
+    }
+    
     #address {
         order: 2;
         flex-direction: column;
@@ -465,6 +492,12 @@ section#academy-benefits h2 {
     }
 
     /* Academy details container */
+    #academy-abouts {
+        border-radius: 0;
+        margin: auto;
+        margin-bottom: 5em;
+    }
+    
     .academy-detail {
         flex-direction: column;
         margin-bottom: .5em;
@@ -505,5 +538,9 @@ section#academy-benefits h2 {
     #academy-last-call h3 {
         text-align: center;
         padding: .5em;
+    }
+    /* Footer */
+    .logofooter {
+        width: 25%;
     }
 }
